@@ -36,10 +36,10 @@ $mq5: 1300; // extra Large screen breakpoint
 $color-1: #222;
 $color-2: #f8f8f8;
 $color-3: #d3d3d3;
-$color-4: #cf6a34;
+$color-4: #f6583c;
 $color-5: #e1dfdf;
 $bgColor: #f8f8f9;
-$yellow: #fbd334;
+$yellow: #6c909f;
 $lightGray: #d3d3d3;
 $footerTextColor: #f8f8f8;
 $barBgColor: #222;
@@ -623,7 +623,7 @@ $navSpacing: 50px;
           content: 'brewery';
         }
 				&[href$='services']:before {
-          content: 'beaker';
+          content: 'people';
         }
 				&[href$='work']:before {
           content: 'mug';
@@ -697,7 +697,7 @@ $navSpacing: 50px;
       background: #c6c5c5 url($images_path+'headingbg-gray.svg');
     }
 		body.services & {
-      background: #fbd334 url($images_path+'headingbg-yellow.svg');
+      background: $yellow url($images_path+'headingbg-yellow.svg');
     }
 		body.work & {
       background: #56b1be url($images_path+'headingbg-blue.svg');
@@ -1284,7 +1284,7 @@ nav.prev-next-entry {
   }
 }
 .icon-beer,
-.icon-beaker,
+.icon-people,
 .icon-news,
 .icon-beercan {
   position: relative;
@@ -1301,12 +1301,12 @@ nav.prev-next-entry {
     background-size: 23px 31px;
   }
 }
-.icon-beaker {
+.icon-people {
 
   &:before {
     width: 26px;
     height: 28px;
-    background-image: url($images_path+'icon-beaker.png');
+    background-image: url($images_path+'icon-people.png');
     background-size: 26px 28px;
   }
 }
