@@ -531,25 +531,27 @@ $navSpacing: 50px;
 		padding-right: 0 !important;
 	}
 	h1 {
-    display: inline-block;
+    //@includedisplay: inline-block;
     position: relative;
     top: 20px;
     left: calc(50% - 150px);
 
     @media all and (min-width: $mq4/$base+em) {
       top: 35px;
-      position: absolute;
+      // position: absolute;
     }
 	}
 	nav {
-    display: block;
+    display: flex;
     text-align: center;
 
 		@media all and (min-width: $mq4/$base+em) {
-			display: block;
+      display: block;
 	  }
     ul {
       @include clearfix;
+      display: flex;
+      justify-content: space-evenly;
     }
 		li {
       display: block;
@@ -574,12 +576,12 @@ $navSpacing: 50px;
           margin-left: $navSpacing;
         }
       }
-			&:nth-child(3) {
+			// &:nth-child(3) {
 
-        @media all and (min-width: $mq4/$base+em) {
-          margin-left: $navSpacing * 2 + 300;
-        }
-      }
+      //   @media all and (min-width: $mq4/$base+em) {
+      //     margin-left: $navSpacing * 2 + 300;
+      //   }
+      // }
 			a {
         display: block;
         padding: 15px 10px;
@@ -1355,19 +1357,19 @@ nav.prev-next-entry {
   }
   .hero-info {
     position: absolute;
-    top: 0;
+    top: 50%;
     width: 625px;
     left: 50%;
     @include translate(-50%, -50%);
 
     @media all and (min-width: $mq3/$base+em) {
       @include translate(-50%, 0);
-      top: 115px;
+      top: 20px;
     }
 
     h1 {
       font-size: 24px;
-      color: $yellow;
+      color: $color-2;
       text-align: center;
       letter-spacing: 4px;
       margin-bottom: 5px;

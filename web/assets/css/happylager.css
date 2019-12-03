@@ -1021,7 +1021,6 @@ strong {
   padding-right: 0 !important;
 }
 #header h1 {
-  display: inline-block;
   position: relative;
   top: 20px;
   left: calc(50% - 150px);
@@ -1029,11 +1028,10 @@ strong {
 @media all and (min-width: 68.75em) {
   #header h1 {
     top: 35px;
-    position: absolute;
   }
 }
 #header nav {
-  display: block;
+  display: flex;
   text-align: center;
 }
 @media all and (min-width: 68.75em) {
@@ -1043,6 +1041,8 @@ strong {
 }
 #header nav ul {
   *zoom: 1;
+  display: flex;
+  justify-content: space-evenly;
 }
 #header nav ul:after {
   content: "";
@@ -1071,11 +1071,6 @@ strong {
 @media all and (min-width: 68.75em) {
   #header nav li:not(:first-child) {
     margin-left: 50px;
-  }
-}
-@media all and (min-width: 68.75em) {
-  #header nav li:nth-child(3) {
-    margin-left: 400px;
   }
 }
 #header nav li a {
@@ -1849,7 +1844,7 @@ nav.prev-next-entry .pag-prev-link:after {
 }
 #hero .hero-info {
   position: absolute;
-  top: 0;
+  top: 50%;
   width: 625px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1865,12 +1860,12 @@ nav.prev-next-entry .pag-prev-link:after {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    top: 115px;
+    top: 20px;
   }
 }
 #hero .hero-info h1 {
   font-size: 24px;
-  color: #fbd334;
+  color: #f8f8f8;
   text-align: center;
   letter-spacing: 4px;
   margin-bottom: 5px;
