@@ -1355,7 +1355,7 @@ nav.prev-next-entry {
   }
   .hero-info {
     position: absolute;
-    top: 50%;
+    top: 0;
     width: 625px;
     left: 50%;
     @include translate(-50%, -50%);
