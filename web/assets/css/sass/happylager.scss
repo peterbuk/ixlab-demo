@@ -520,7 +520,7 @@ $navSpacing: 50px;
 
 #header {
 	position: relative;
-	border-bottom: 4px solid $lightGray;
+	// border-bottom: 4px solid $lightGray;
 
   .flex {
     padding-bottom: 0 !important;
@@ -537,7 +537,7 @@ $navSpacing: 50px;
     left: calc(50% - 150px);
 
     @media all and (min-width: $mq4/$base+em) {
-      top: 35px;
+      // top: 35px;
       // position: absolute;
     }
 	}
@@ -588,14 +588,14 @@ $navSpacing: 50px;
         position: relative;
 
         @media all and (min-width: $mq1/$base+em) {
-          padding: 48px 20px;
+          padding: 36px 20px;
         }
         @media all and (min-width: $mq2/$base+em) {
-          padding: 48px;
+          padding: 36px;
         }
 
         @media all and (min-width: $mq4/$base+em) {
-          padding: 48px 0;
+          padding: 36px 0;
         }
 
 				&:before {
@@ -621,18 +621,18 @@ $navSpacing: 50px;
           }
         }
 
-				&[href$='about']:before {
-          content: 'brewery';
-        }
-				&[href$='services']:before {
-          content: 'beaker';
-        }
-				&[href$='work']:before {
-          content: 'mug';
-        }
-				&[href$='news']:before {
-          content: 'news';
-        }
+				// &[href$='about']:before {
+        //   content: 'brewery';
+        // }
+				// &[href$='services']:before {
+        //   content: 'beaker';
+        // }
+				// &[href$='work']:before {
+        //   content: 'mug';
+        // }
+				// &[href$='news']:before {
+        //   content: 'news';
+        // }
 
 				strong {
           display: block;
@@ -1438,8 +1438,8 @@ nav.prev-next-entry {
 
   &:before {
     z-index: 1;
-    left: 17px;
-    top: 6px;
+    left: 14px;
+    top: 10px;
   }
   &:after {
     content: '';

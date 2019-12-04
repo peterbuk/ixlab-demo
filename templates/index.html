@@ -19,7 +19,7 @@
 		{% endif %}
 
 		<div class="hero-info">
-			<h1>Welcome to ixlab<br>
+			<!-- <h1>Welcome to ixlab<br> -->
 			</h1>
 			<!-- <p class="center reverse">Work with Happy Lager and you will find an endless<br>
 				tap of ideas, wit and creativity.
@@ -27,6 +27,34 @@
 			<!-- <p class="center"><a href="mailto:hi@happylager.dev" class="hero-cta">Join Us</a></p> -->
 		</div>
 	</div>
+
+	<section id="on-tap">
+		<div class="flex">
+			<div class="g1-flex4 g2-flex6 g3-flex12">
+				<div class="on-tap-buttons-wrap">
+					<a class="button-w-icon icon-news" href="{{ url('work') }}">Announcements</a>
+					<a href="{{ url('work') }}" class="view-more">View More</a>
+				</div>
+			</div>
+		</div>
+		<div class="flex">
+
+			{# Pull in the three latest Work entries #}
+			{% for workEntry in craft.entries.section('work').limit(3).all() %}
+				<div class="g1-flex4 g2-flex2 g3-flex4">
+					<a href="{{ workEntry.url }}" class="services-entry-wrap">
+						{% set image = workEntry.featuredThumb.one() %}
+						{% if image %}
+							<img src="{{ image.getUrl('thumb') }}" alt="image.title"/>
+						{% endif %}
+						<h3 class="center">{{ workEntry.title }}</h3>
+						{{ workEntry.shortDescription }}
+					</a>
+				</div>
+			{% endfor %}
+
+		</div>
+	</section>
 
 	<!--section id="on-tap">
 		<div class="flex">
